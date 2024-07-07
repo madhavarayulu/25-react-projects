@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { data } from './data';
-import './styles.css';
+import './accordion.css';
 
 export default function Accordion() {
   const [select, setSelect] = useState(null);
@@ -22,9 +22,9 @@ export default function Accordion() {
     setMultipleSelection(copyOfMultiSelection);
   }
 
-  function renderAccordionItem(dataItem) {
+  function renderAccordionItem(dataItem, index) {
     return (
-      <div className="item">
+      <div key={dataItem.id || index} className="item">
         <div
           onClick={
             enableMultiSelect

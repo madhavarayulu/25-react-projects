@@ -1,10 +1,54 @@
 import './App.css';
-import Accordion from './components';
+import Accordion from './components/accordion/Accordion';
+import ImageSlider from './components/image-slider/ImageSlider';
+import LoadMoreData from './components/load-more-data/LoadMoreData';
+import menus from './components/nested-menu/data';
+import NestedMenu from './components/nested-menu/NestedMenu';
+import RandomColor from './components/random-color/RandomColor';
+import StarRating from './components/star-rating/StarRating';
 
 function App() {
   return (
-    <div className='app'>
-      <Accordion />
+    <div className="app">
+      <div className="project-wrapper">
+        <p>#1 Accordion</p>
+        <Accordion />
+        <hr />
+      </div>
+
+      <div className="project-wrapper">
+        <p>#2 Random Color Generator</p>
+        <RandomColor />
+        <hr />
+      </div>
+
+      <div className="project-wrapper">
+        <p>#3 Star Rating</p>
+        <StarRating />
+        <hr />
+      </div>
+
+      <div className="project-wrapper">
+        <p>#4 Image Slider</p>
+        <ImageSlider
+          baseUrl={'https://picsum.photos/v2/list'}
+          limit={'10'}
+          page={'1'}
+        />
+        <hr />
+      </div>
+
+      <div className="project-wrapper">
+        <p>#5 Load More Data</p>
+        <LoadMoreData />
+        <hr />
+      </div>
+
+      <div className="project-wrapper">
+        <p>#6 Nested Menu</p>
+        <NestedMenu menus={menus} />
+        <hr />
+      </div>
     </div>
   );
 }

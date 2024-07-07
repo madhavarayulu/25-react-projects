@@ -1,0 +1,12 @@
+.container {
+  /* width: 100vw; */
+  height: 100vh;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+}
