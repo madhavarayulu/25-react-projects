@@ -4,6 +4,7 @@ import ImageSlider from './components/image-slider/ImageSlider';
 import LoadMoreData from './components/load-more-data/LoadMoreData';
 import menus from './components/nested-menu/data';
 import NestedMenu from './components/nested-menu/NestedMenu';
+import QrCodeGenerator from './components/qr-code-generator/QrCodeGenerator';
 import RandomColor from './components/random-color/RandomColor';
 import StarRating from './components/star-rating/StarRating';
 
@@ -47,6 +48,12 @@ function App() {
       <div className="project-wrapper">
         <p>#6 Nested Menu</p>
         <NestedMenu menus={menus} />
+        <hr />
+      </div>
+
+      <div className="project-wrapper">
+        <p>#7 QR Code Generator</p>
+        <QrCodeGenerator />
         <hr />
       </div>
     </div>
