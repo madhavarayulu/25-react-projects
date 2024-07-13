@@ -7,6 +7,7 @@ import NestedMenu from './components/nested-menu/NestedMenu';
 import QrCodeGenerator from './components/qr-code-generator/QrCodeGenerator';
 import RandomColor from './components/random-color/RandomColor';
 import StarRating from './components/star-rating/StarRating';
+import ThemeSwitch from './components/theme-switch/ThemeSwitch';
 
 function App() {
   return (
@@ -54,6 +55,12 @@ function App() {
       <div className="project-wrapper">
         <p>#7 QR Code Generator</p>
         <QrCodeGenerator />
+        <hr />
+      </div>
+
+      <div className="project-wrapper">
+        <p>#8 Theme Switch</p>
+        <ThemeSwitch />
         <hr />
       </div>
     </div>
