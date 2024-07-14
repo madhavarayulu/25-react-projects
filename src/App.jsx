@@ -6,6 +6,7 @@ import menus from './components/nested-menu/data';
 import NestedMenu from './components/nested-menu/NestedMenu';
 import QrCodeGenerator from './components/qr-code-generator/QrCodeGenerator';
 import RandomColor from './components/random-color/RandomColor';
+import ScrollIndicator from './components/scroll-indicator/ScrollIndicator';
 import StarRating from './components/star-rating/StarRating';
 import ThemeSwitch from './components/theme-switch/ThemeSwitch';
 
@@ -61,6 +62,12 @@ function App() {
       <div className="project-wrapper">
         <p>#8 Theme Switch</p>
         <ThemeSwitch />
+        <hr />
+      </div>
+
+      <div className="project-wrapper">
+        <p>#9 Scroll Indicator</p>
+        <ScrollIndicator url={'https://dummyjson.com/products?limit=100'} />
         <hr />
       </div>
     </div>

@@ -1,0 +1,20 @@
+.scroll-indicator-container {
+  height: 500px;
+  overflow-y: scroll;
+  position: relative;
+  scrollbar-width: thin;
+  scrollbar-color: #333 transparent;
+}
+
+.progress-bar {
+  width: 0;
+  height: 5px;
+  position: sticky;
+  background-color: #007bff;
+  top: 0;
+  left: 0;
+}
+
+.scroll-data-container {
+  padding: 10px;
+}
