@@ -1,5 +1,6 @@
 import './App.css';
 import Accordion from './components/accordion/Accordion';
+import CustomTabs from './components/custom-tabs/CustomTabs';
 import ImageSlider from './components/image-slider/ImageSlider';
 import LoadMoreData from './components/load-more-data/LoadMoreData';
 import menus from './components/nested-menu/data';
@@ -68,6 +69,12 @@ function App() {
       <div className="project-wrapper">
         <p>#9 Scroll Indicator</p>
         <ScrollIndicator url={'https://dummyjson.com/products?limit=100'} />
+        <hr />
+      </div>
+
+      <div className="project-wrapper">
+        <p>#10 Custom Tabs</p>
+        <CustomTabs />
         <hr />
       </div>
     </div>

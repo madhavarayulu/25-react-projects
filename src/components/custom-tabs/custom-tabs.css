@@ -1,0 +1,35 @@
+.tabs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1c1c21;
+  padding: 20px;
+}
+
+.tabs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  background-color: #26262c;
+}
+
+.tabs-list li {
+  color: #dee2e6;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.3s ease;
+}
+
+.tabs-list li.active {
+  background-color: #2F3037;
+  border-bottom-color: blue;
+}
+
+.tab-content {
+  padding: 20px;
+  color: #f8f9fa;
+  background-color: #393a41;
+  margin-top: 20px;
+}
