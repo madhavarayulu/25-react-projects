@@ -1,5 +1,6 @@
 import './App.css';
 import Accordion from './components/accordion/Accordion';
+import CustomModal from './components/custom-modal/CustomModal';
 import CustomTabs from './components/custom-tabs/CustomTabs';
 import ImageSlider from './components/image-slider/ImageSlider';
 import LoadMoreData from './components/load-more-data/LoadMoreData';
@@ -75,6 +76,12 @@ function App() {
       <div className="project-wrapper">
         <p>#10 Custom Tabs</p>
         <CustomTabs />
+        <hr />
+      </div>
+
+      <div className="project-wrapper">
+        <p>#11 Custom Modal</p>
+        <CustomModal />
         <hr />
       </div>
     </div>
