@@ -2,6 +2,7 @@ import './App.css';
 import Accordion from './components/accordion/Accordion';
 import CustomModal from './components/custom-modal/CustomModal';
 import CustomTabs from './components/custom-tabs/CustomTabs';
+import FeatureFlag from './components/feature-flag/FeatureFlag';
 import GithubProfileFinder from './components/github-profile-finder/GithubProfileFinder';
 import ImageSlider from './components/image-slider/ImageSlider';
 import LoadMoreData from './components/load-more-data/LoadMoreData';
@@ -93,6 +94,11 @@ const appData = [
     id: '14',
     project: 'Tic-Tac-Toe',
     component: <TicTacToe />,
+  },
+  {
+    id: '15',
+    project: 'Feature Flag',
+    component: <FeatureFlag />,
   },
 ];
 

@@ -1,0 +1,27 @@
+.container-feature-flag {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  margin-top: 1.5em;
+}
+
+.btn-new-feature {
+  border: 1px solid blueviolet;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(138, 43, 226, 0.8);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(138, 43, 226, 0.8);
+  box-shadow: 0px 0px 15px 0px rgba(138, 43, 226, 0.8);
+}
+
+.btn-new-feature:hover,
+.btn-new-feature:focus {
+  border: 2px solid blueviolet;
+}
+
+.feature-component {
+  margin: 1.5em 0.5em;
+}
+
+.feature-component-new {
+  color: blueviolet;
+  font-weight: 500;
+}

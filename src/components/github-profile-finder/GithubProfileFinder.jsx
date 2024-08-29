@@ -41,8 +41,7 @@ function GithubProfileFinder() {
       <div className="wrapper-input">
         <input
           type="text"
-          autoFocus
-          placeholder="Search GitHub Username ... "
+          placeholder="Search GitHub Username"
           value={userName}
           onChange={(event) => setUserName(event.target.value)}
         />

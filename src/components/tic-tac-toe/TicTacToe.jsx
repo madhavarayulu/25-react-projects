@@ -63,7 +63,6 @@ function TicTacToe() {
 
   return (
     <div className="container-tic-tac-toe">
-      <h2>Tic-Tac-Toe</h2>
       <div className="status">{status}</div>
       <div className="board">
         {board.map((cell, index) => renderSquare(index))}
