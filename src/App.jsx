@@ -10,6 +10,7 @@ import NestedMenu from './components/nested-menu/NestedMenu';
 import QrCodeGenerator from './components/qr-code-generator/QrCodeGenerator';
 import RandomColor from './components/random-color/RandomColor';
 import ScrollIndicator from './components/scroll-indicator/ScrollIndicator';
+import SearchAutocomplete from './components/search-autocomplete/SearchAutocomplete';
 import StarRating from './components/star-rating/StarRating';
 import ThemeSwitch from './components/theme-switch/ThemeSwitch';
 
@@ -81,6 +82,11 @@ const appData = [
     id: '12',
     project: 'GitHub Profile Finder',
     component: <GithubProfileFinder />,
+  },
+  {
+    id: '13',
+    project: 'Search Autocomplete',
+    component: <SearchAutocomplete />,
   },
 ];
 
