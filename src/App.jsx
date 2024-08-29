@@ -2,6 +2,7 @@ import './App.css';
 import Accordion from './components/accordion/Accordion';
 import CustomModal from './components/custom-modal/CustomModal';
 import CustomTabs from './components/custom-tabs/CustomTabs';
+import GithubProfileFinder from './components/github-profile-finder/GithubProfileFinder';
 import ImageSlider from './components/image-slider/ImageSlider';
 import LoadMoreData from './components/load-more-data/LoadMoreData';
 import menus from './components/nested-menu/data';
@@ -12,78 +13,88 @@ import ScrollIndicator from './components/scroll-indicator/ScrollIndicator';
 import StarRating from './components/star-rating/StarRating';
 import ThemeSwitch from './components/theme-switch/ThemeSwitch';
 
+const appData = [
+  {
+    id: '1',
+    project: 'Accordion',
+    component: <Accordion />,
+  },
+  {
+    id: '2',
+    project: 'Random Color Generator',
+    component: <RandomColor />,
+  },
+  {
+    id: '3',
+    project: 'Star Rating',
+    component: <StarRating />,
+  },
+  {
+    id: '4',
+    project: 'Image Slider',
+    component: (
+      <ImageSlider
+        baseUrl={'https://picsum.photos/v2/list'}
+        limit={'10'}
+        page={'1'}
+      />
+    ),
+  },
+  {
+    id: '5',
+    project: 'Load More Data',
+    component: <LoadMoreData />,
+  },
+  {
+    id: '6',
+    project: 'Nested Menu',
+    component: <NestedMenu menus={menus} />,
+  },
+  {
+    id: '7',
+    project: 'QR Code Generator',
+    component: <QrCodeGenerator />,
+  },
+  {
+    id: '8',
+    project: 'Theme Switch',
+    component: <ThemeSwitch />,
+  },
+  {
+    id: '9',
+    project: 'Scroll Indicator',
+    component: (
+      <ScrollIndicator url={'https://dummyjson.com/products?limit=100'} />
+    ),
+  },
+  {
+    id: '10',
+    project: 'Custom Tabs',
+    component: <CustomTabs />,
+  },
+  {
+    id: '11',
+    project: 'Custom Modal',
+    component: <CustomModal />,
+  },
+  {
+    id: '12',
+    project: 'GitHub Profile Finder',
+    component: <GithubProfileFinder />,
+  },
+];
+
 function App() {
   return (
     <div className="app">
-      <div className="project-wrapper">
-        <p>#1 Accordion</p>
-        <Accordion />
-        <hr />
-      </div>
-
-      <div className="project-wrapper">
-        <p>#2 Random Color Generator</p>
-        <RandomColor />
-        <hr />
-      </div>
-
-      <div className="project-wrapper">
-        <p>#3 Star Rating</p>
-        <StarRating />
-        <hr />
-      </div>
-
-      <div className="project-wrapper">
-        <p>#4 Image Slider</p>
-        <ImageSlider
-          baseUrl={'https://picsum.photos/v2/list'}
-          limit={'10'}
-          page={'1'}
-        />
-        <hr />
-      </div>
-
-      <div className="project-wrapper">
-        <p>#5 Load More Data</p>
-        <LoadMoreData />
-        <hr />
-      </div>
-
-      <div className="project-wrapper">
-        <p>#6 Nested Menu</p>
-        <NestedMenu menus={menus} />
-        <hr />
-      </div>
-
-      <div className="project-wrapper">
-        <p>#7 QR Code Generator</p>
-        <QrCodeGenerator />
-        <hr />
-      </div>
-
-      <div className="project-wrapper">
-        <p>#8 Theme Switch</p>
-        <ThemeSwitch />
-        <hr />
-      </div>
-
-      <div className="project-wrapper">
-        <p>#9 Scroll Indicator</p>
-        <ScrollIndicator url={'https://dummyjson.com/products?limit=100'} />
-        <hr />
-      </div>
-
-      <div className="project-wrapper">
-        <p>#10 Custom Tabs</p>
-        <CustomTabs />
-        <hr />
-      </div>
-
-      <div className="project-wrapper">
-        <p>#11 Custom Modal</p>
-        <CustomModal />
-        <hr />
-      </div>
+      {appData.map((item) => (
+        <div className="project-wrapper" key={item.id}>
+          <p>
+            #{item.id} {item.project}
+          </p>
+          {item.component}
+        </div>
+      ))}
     </div>
   );
 }

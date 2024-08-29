@@ -1,0 +1,50 @@
+.container-github-profile {
+  display: grid;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.wrapper-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.card-github-user {
+  display: grid;
+  justify-items: center;
+  gap: 0.5em;
+  background-color: #1C1C21;
+  padding: 0.75em;
+}
+
+.card-github-user img {
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+.github-user-data {
+  width: 90%;
+  display: grid;
+}
+
+.github-user-data span {
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+.github-user-data span:nth-child(1) {
+  background-color: rgba(6, 62, 107, 0.7);
+  color: rgba(255, 255, 255, 0.7);
+  border-top-left-radius: 5em;
+  border-top-right-radius: 5em;
+}
+
+.github-user-data span:nth-child(2) {
+  background-color: rgb(6, 62, 107);
+  border-bottom-left-radius: 5em;
+  border-bottom-right-radius: 5em;
+  font-weight: 500;
+}
