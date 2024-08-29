@@ -17,6 +17,7 @@ function GithubUserCard({ user }) {
   return (
     <div className="card-github-user">
       <img src={avatar_url} alt="user" />
+      <p>{name}</p>
       <a href={html_url} target="_blank">
         {login}
       </a>
